@@ -226,6 +226,21 @@ public class MainActivity extends AppCompatActivity {
                 textView_1.setText("");
             }
         });
+
+        buttonSwitch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int num = Integer.parseInt(textView_2.getText()+"");
+                if(num>0){
+                    textView_2.setText("-"+num);
+                }
+                else
+                {
+                    num = - num;
+                    textView_2.setText(""+num);
+                }
+            }
+        });
     }
 
 
